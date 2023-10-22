@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+    <script src="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Локация</h1>
+      <div class="dropdown">
+        <button class="dropdown__button select__category ordering__data-dropdown">
+          <div class="search__box">
+            <img src="./images/search.svg" alt="search" />
+            <span>ЖК, Округ, район, метро</span>
+          </div>
+          <span class="count"></span>
+        </button>
+        <div class="dropdown__list tabs">
+          <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked />
+          <label for="tab-btn-1">ЖК</label>
+          <input type="radio" name="tab-btn" id="tab-btn-2" value="" />
+          <label for="tab-btn-2">Округ</label>
+          <input type="radio" name="tab-btn" id="tab-btn-3" value="" />
+          <label for="tab-btn-3">Район</label>
+          <input type="radio" name="tab-btn" id="tab-btn-4" value="" />
+          <label for="tab-btn-4">Метро</label>
+          <div id="content-1" class="dropdown__list-item">
+            <div class="content">
+              <div class="elementGroupScroll">
+                <div class="elementGroup">
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter1-1"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter1-1"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter1-2"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter1-2"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter1-3"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter1-3"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter1-4"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter1-4"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter1-5"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter1-5"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter1-6"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter1-6"/>
+                  </div>
+                </div>
+              </div>
+              <div class="mycustom-scroll" data-mcs-theme="dark">
+                <div class="checkboxGroup">
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter1-1" value="Академический"/>
+                  <label for="filter1-1">
+                    <span>Академический</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter1-2" value="Басманный"/>
+                  <label for="filter1-2">
+                    <span>Басманный</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter1-3" value="Замоскворечье"/>
+                  <label for="filter1-3">
+                    <span>Замоскворечье</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter1-4"value="Измайлово"/>
+                  <label for="filter1-4">
+                    <span>Измайлово</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter1-5" value="Люблино"/>
+                  <label for="filter1-5">
+                    <span>Люблино</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter1-6" value="Мичуринский"/>
+                  <label for="filter1-6">
+                    <span>Мичуринский</span>
+                  </label>
+                </div>
+              </div>
+              <div class="gradient"></div>
+            </div>
+          </div>
+          <div id="content-2" class="dropdown__list-item">
+            <div class="content">
+              <div class="elementGroupScroll">
+                <div class="elementGroup">
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter2-1"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter2-1"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter2-2"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter2-2"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter2-3"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter2-3"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter2-4"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter2-4"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter2-5"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter2-5"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter2-6"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter2-6"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter2-7"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter2-7"/>
+                  </div>
+                </div>
+              </div>
+              <div class="mycustom-scroll" data-mcs-theme="dark">
+                <div class="checkboxGroup">
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter2-1" value="Центральный"/>
+                  <label for="filter2-1">
+                    <span>Центральный</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter2-2" value="Северный"/>
+                  <label for="filter2-2">
+                    <span>Северный</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter2-3" value="Северо-Восточный"/>
+                  <label for="filter2-3">
+                    <span>Северо&#8209;Восточный</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter2-4" value="Восточный"/>
+                  <label for="filter2-4">
+                    <span>Восточный</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter2-5" value="Юго-Восточный"/>
+                  <label for="filter2-5">
+                    <span>Юго&#8209;Восточный</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" d="filter2-6" value="Южный"/>
+                  <label for="filter2-6">
+                    <span>Южный</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter2-7" value="Юго-Западный"/>
+                  <label for="filter2-7">
+                    <span>Юго&#8209;Западный</span>
+                  </label>
+                </div>
+              </div>
+              <div class="gradient"></div>
+            </div>
+          </div>
+          <div id="content-3" class="dropdown__list-item">
+            <div class="content">
+              <div class="elementGroupScroll">
+                <div class="elementGroup">
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter3-1"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter3-1"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter3-2"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter3-2"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter3-3"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter3-3"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter3-4"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter3-4"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter3-5"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter3-5"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter3-6"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter3-6"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter3-7"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter3-7"/>
+                  </div>
+                </div>
+              </div>
+              <div class="mycustom-scroll" data-mcs-theme="dark">
+                <div class="checkboxGroup">
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter3-1" value="Бауманский"/>
+                  <label for="filter3-1">
+                    <span>Бауманский</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter3-2" value="Городской" />
+                  <label for="filter3-2">
+                    <span>Городской</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter3-3" value="Замоскворецкий"/>
+                  <label for="filter3-3">
+                    <span>Замоскворецкий</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter3-4" value="Рогожско-Симоновский"/>
+                  <label for="filter3-4">
+                    <span>Рогожско-Симоновский</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter3-5" value="Краснопресненский"/>
+                  <label for="filter3-5">
+                    <span>Краснопресненский</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter3-6" value="Замоскворецкий"/>
+                  <label for="filter3-6">
+                    <span>Замоскворецкий</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter3-7" value="Хамовнический"/>
+                  <label for="filter3-7">
+                    <span>Хамовнический</span>
+                  </label>
+                </div>
+              </div>
+              <div class="gradient"></div>
+            </div>
+          </div>
+          <div id="content-4" class="dropdown__list-item">
+            <div class="content">
+              <div class="elementGroupScroll">
+                <div class="elementGroup">
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter4-1"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter4-1"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter4-2"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter4-2"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter4-3"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter4-3"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter4-4"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter4-4"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter4-5"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter4-5"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter4-6"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter4-6"/>
+                  </div>
+                  <div class="row-item-box">
+                    <span class="row-item" data-id="filter4-7"></span>
+                    <img src="./images/сlose.svg" class="row-item-close" data-id="filter4-7"/>
+                  </div>
+                </div>
+              </div>
+              <div class="mycustom-scroll" data-mcs-theme="dark">
+                <div class="checkboxGroup">
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter4-1" value="Авиамоторная"/>
+                  <label for="filter4-1">
+                    <span>Авиамоторная</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter4-2" value="Автозаводская"/>
+                  <label for="filter4-2">
+                    <span>Автозаводская</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter4-3" value="Академическая"/>
+                  <label for="filter4-3">
+                    <span>Академическая</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter4-4" value="Арбатская"/>
+                  <label for="filter4-4">
+                    <span>Арбатская</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter4-5" value="Алексеевская"/>
+                  <label for="filter4-5">
+                    <span>Алексеевская</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter4-6" value="Алтуфьево"/>
+                  <label for="filter4-6">
+                    <span>Алтуфьево</span>
+                  </label>
+                  <input class="custom-checkbox" type="checkbox" name="checkboxGroup" id="filter4-7" value="Аннино"/>
+                  <label for="filter4-7">
+                    <span>Аннино</span>
+                  </label>
+                </div>
+              </div>
+              <div class="gradient"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
