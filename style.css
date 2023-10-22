@@ -149,9 +149,10 @@ main {
 
 .content {
   margin: 0 auto;
-  padding: 0 2px 0 16px;
-  overflow-y: scroll;
+  padding-left: 16px;
+  overflow-y: auto;
   height: 300px;
+  touch-action: auto;
 }
 .content {
   scrollbar-width: none;
@@ -172,7 +173,7 @@ main {
   overflow-x: scroll;
   scrollbar-width: thin;
   border-bottom: 1px solid #e3e6e8;
-  margin-right: -8px;
+  /* margin-right: -8px; */
   margin-left: -16px;
 }
 .elementGroupScroll {
@@ -221,7 +222,7 @@ main {
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  left: 248px;
+  left: 253px;
 }
 .custom-checkbox:checked + label::after {
   background-image: url("./images/tick.svg"),
@@ -302,7 +303,7 @@ main {
   background-color: transparent;
 }
 .mCSB_inside > .mCSB_container {
-  margin-right: 20px;
+  margin-right: 0;
 }
 .mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
   background-color: #07000f;
@@ -310,4 +311,7 @@ main {
 .mCSB_scrollTools {
   opacity: 1;
   display: block !important;
+}
+.mCustomScrollbar {
+  touch-action: auto;
 }
